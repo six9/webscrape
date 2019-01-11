@@ -7,6 +7,6 @@ responce = requests.get(thelink)
 responce.status_code
 thecontent = BeautifulSoup(responce.content,"html.parser")
 
-thecontent.find_all('strong',class_='scholaship')
+content = thecontent.find_all('strong')
 
-
+print(content)
